@@ -26,6 +26,7 @@ var app = {
 		console.log("pushNotification.register TokenHandler:  " + data);
 	},
 	onDeviceReady : function(){
+		navigator.splashscreen.show();
 		console.log("Device Ready");
 		if (jQuery.device.is.phone) {
 			app.registerCert();
