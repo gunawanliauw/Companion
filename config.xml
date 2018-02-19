@@ -61,5 +61,5 @@
   <preference name="SplashScreen" value="screen"/>
   <preference name="SplashScreenDelay" value="5000"/>
   <icon src="www/res/android/Companion.png"/>
-  <splash src="www/res/android/Companion.png" />
+  <splash src="splash.png" />
 </widget>
