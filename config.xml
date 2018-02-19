@@ -21,7 +21,12 @@
   <allow-intent href="sms:*"/>
   <allow-intent href="mailto:*"/>
   <allow-intent href="geo:*"/> 
-  <splash src="splash.png" />
+  <preference name="sap-development-version" value="0.0.1"/>
+  <preference name="hybridapprevision" value="1"/>
+  <preference name="SplashScreen" value="www/res/android/Companion.png"/>
+  <preference name="SplashScreenDelay" value="5000"/>
+  <icon src="res/icon/icon_512.png"/>
+  <splash src="www/res/android/Companion.png" />
   <platform name="android">
     <icon src="www/res/android/Companion.png" density="ldpi"/>
     <icon src="www/res/android/Companion.png" density="mdpi"/>
@@ -56,10 +61,5 @@
     <preference name="LoadUrlTimeout" value="80000"/>
     <preference name="UrlScheme" value=""/>
     <preference name="android-minSdkVersion" value="16"/>
-  </platform>
-  <preference name="sap-development-version" value="0.0.1"/>
-  <preference name="hybridapprevision" value="1"/>
-  <preference name="SplashScreen" value="splash"/>
-  <preference name="SplashScreenDelay" value="5000"/>
-  <icon src="res/icon/icon_512.png"/>
+  </platform>  
 </widget>
