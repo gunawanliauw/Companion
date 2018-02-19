@@ -5,6 +5,7 @@
   <author email="dev@sap.com" href="http://www.sap.com">SAP Product and Innovation</author>
   <content src="index.html"/>
   <plugin name="cordova-plugin-whitelist" spec="1" version="1.0.0"/>
+  <plugin name="cordova-push-notifications"/>
   <access origin="*"/>
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
