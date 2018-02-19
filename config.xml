@@ -26,14 +26,14 @@
     <icon src="www/res/android/Companion.png" density="mdpi"/>
     <icon src="www/res/android/Companion.png" density="hdpi"/>
     <icon src="www/res/android/Companion.png" density="xhdpi"/>
-    <splash src="www/res/android/Companion.png" density="land-ldpi"/>
-    <splash src="www/res/android/Companion.png" density="port-ldpi"/>
-    <splash src="www/res/android/Companion.png" density="land-mdpi"/>
-    <splash src="www/res/android/Companion.png" density="port-mdpi"/>
-    <splash src="www/res/android/Companion.png" density="land-hdpi"/>
-    <splash src="www/res/android/Companion.png" density="port-hdpi"/>
-    <splash src="www/res/android/Companion.png" density="land-xhdpi"/>
-    <splash src="www/res/android/Companion.png" density="port-xhdpi"/>
+    <splash src="www/res/android/Companion.png" qualifier="land-ldpi"/>
+    <splash src="www/res/android/Companion.png" qualifier="port-ldpi"/>
+    <splash src="www/res/android/Companion.png" qualifier="land-mdpi"/>
+    <splash src="www/res/android/Companion.png" qualifier="port-mdpi"/>
+    <splash src="www/res/android/Companion.png" qualifier="land-hdpi"/>
+    <splash src="www/res/android/Companion.png" qualifier="port-hdpi"/>
+    <splash src="www/res/android/Companion.png" qualifier="land-xhdpi"/>
+    <splash src="www/res/android/Companion.png" qualifier="port-xhdpi"/>
   </platform>
   <platform name="ios">
     <splash src="res/screen/ios/Default~iphone.png" width="320" height="480"/>
