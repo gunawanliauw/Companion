@@ -20,7 +20,8 @@
   <allow-intent href="tel:*"/>
   <allow-intent href="sms:*"/>
   <allow-intent href="mailto:*"/>
-  <allow-intent href="geo:*"/>
+  <allow-intent href="geo:*"/> 
+  <splash src="splash.png" />
   <platform name="android">
     <icon src="www/res/android/Companion.png" density="ldpi"/>
     <icon src="www/res/android/Companion.png" density="mdpi"/>
