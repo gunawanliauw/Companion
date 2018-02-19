@@ -58,7 +58,7 @@
   </platform>
   <preference name="sap-development-version" value="0.0.1"/>
   <preference name="hybridapprevision" value="1"/>
-  <preference name="SplashScreen" value="screen"/>
+  <preference name="SplashScreen" value="splash"/>
   <preference name="SplashScreenDelay" value="5000"/>
   <icon src="res/icon/icon_512.png"/>
 </widget>
