@@ -25,7 +25,7 @@
   <preference name="hybridapprevision" value="1"/>
   <preference name="SplashScreen" value="www/res/android/Companion.png"/>
   <preference name="SplashScreenDelay" value="5000"/>
-  <icon src="res/icon/icon_512.png"/>
+  <icon src="www/res/android/Companion.png"/>
   <splash src="www/res/android/Companion.png" />
   <platform name="android">
     <icon src="www/res/android/Companion.png" density="ldpi"/>
