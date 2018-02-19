@@ -1,0 +1,82 @@
+{
+    "resources": [
+        {
+            "name": "flp-config.json"
+        },
+        {
+            "name": ".project.json"
+        },
+        {
+            "name": "beep.wav"
+        },
+        {
+            "name": "extended_runnable_file.html"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "style/index.css"
+        },
+        {
+            "name": "style/styles.css"
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "devlogon.js"
+        },
+        {
+            "name": "js/cordova.oauth2.js"
+        },
+        {
+            "name": "js/jQuery.leanModal.js"
+        },
+        {
+            "name": "js/jQuery-1.9.1.js"
+        },
+        {
+            "name": "js/plugin/Launcher.js"
+        },
+        {
+            "name": "js/plugin/PushNotification.js"
+        },
+        {
+            "name": "js/index.js"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "devapp.js"
+        },
+        {
+            "name": "controller/App.controller.js"
+        },
+        {
+            "name": "res/android/Companion.png"
+        },
+        {
+            "name": ".user.project.json"
+        },
+        {
+            "name": "index.html"
+        },
+        {
+            "name": "view/App.view.xml"
+        },
+        {
+            "name": "fioriHtmlRunner.html"
+        },
+        {
+            "name": "resources.json",
+            "merged": true
+        }
+    ]
+}

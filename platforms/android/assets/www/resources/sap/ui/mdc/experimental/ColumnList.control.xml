@@ -1,0 +1,29 @@
+<core:FragmentDefinition xmlns:m="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:mdc="sap.ui.mdc" xmlns:p13n="sap.ui.mdc.experimental">
+	<l:VerticalLayout>
+		<m:Table mode="MultiSelect" itemPress="updateManagedObjectModel" includeItemInSelection="false" class="sapUiMdcColumnListTable" id="columnsTable" items="{path:'data>/columns', parameters:{columnList: 'orderColumns'}}" growing="false" selectionChange="updateManagedObjectModel">
+			<m:headerToolbar>
+				<m:Toolbar>
+					<m:Title text="Columns" level="H2"/>
+					<m:Input id="search" value="{data>/search}" liveChange="_onChangeFilter"></m:Input>
+					<m:Button icon="sap-icon://collapse-group" press="moveSelectedTop" enabled="{$this>/hasActivatedItem}"/>
+					<m:Button icon="sap-icon://navigation-up-arrow" press="moveSelectedUp" enabled="{$this>/hasActivatedItem}"/>
+					<m:Button icon="sap-icon://navigation-down-arrow" press="moveSelectedDown" enabled="{$this>/hasActivatedItem}"/>
+					<m:Button icon="sap-icon://expand-group" press="moveSelectionButtom" enabled="{$this>/hasActivatedItem}"/>
+				</m:Toolbar>
+			</m:headerToolbar>
+			<m:columns>
+				<m:Column>
+					<m:Text text="Select All ({$this>/columnsTable/getSelectedItems/length} / {data>/length})" />
+				</m:Column>
+			</m:columns>
+			<m:items>
+				<p13n:MovableListItem type="Active" movable="{= ${data>position} !== 'first' &amp;&amp; ${data>position} !== 'last' &amp;&amp; ${data>dependant} !== true}" selected="{data>visible}">
+					<p13n:cells>
+						<m:Text text="{data>label} {= ${data>position} === 'first' ? '(fixed top column)': ${data>position} === 'last' ? '(fixed bottom column)': ''}" tooltip="{data>description}"/>
+					</p13n:cells>
+				</p13n:MovableListItem>
+			</m:items>
+		</m:Table>
+	</l:VerticalLayout>
+
+</core:FragmentDefinition>

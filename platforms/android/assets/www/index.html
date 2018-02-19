@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://gsso.aspac.kpmg.com https://fioriapps.aspac.kpmg.com data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline';script-src 'self' https://gsso.aspac.kpmg.com 'unsafe-inline' 'unsafe-eval'; media-src *">-->
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://gsso.aspac.kpmg.com https://fioriapps.stg.aspac.kpmg.com data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline';script-src 'self' https://gsso.aspac.kpmg.com 'unsafe-inline' 'unsafe-eval'; media-src *">
+		<meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<link rel="stylesheet" href="style/index.css">
+		<link rel="stylesheet" href="style/styles.css">
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal"
+	            data-sap-ui-bindingSyntax="complex"
+	            data-sap-ui-compatVersion="edge"
+	            data-sap-ui-preload="async"
+				data-sap-ui-resourceroots='{"companion": "./"}'>
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+		<script>
+			function loadframe(){
+                document.getElementById('loginmodal').style.visibility = 'hidden';
+                var user=document.getElementById('username').value;
+                var pasword=document.getElementById('pword').value;
+                app.oAuth2Login_onOK();
+            }
+		</script>
+		<!--<script type="text/javascript" src="js/jQuery-1.9.1.js"></script>-->
+  <!--      <script type="text/javascript" charset="utf-8" src="js/jQuery.leanModal.js"></script>-->
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/plugin/Launcher.js"></script>
+		<script type="text/javascript" src="js/plugin/PushNotification.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/cordova.oauth2.js"></script>
+		<script type="text/javascript">
+		  /*=====================================================================
+		   The following onError function is used to trap any errors that occur
+		   while the application is running. Cordova fails silently whenever it
+		   encounters an error in HTML or JavaScript code. So, with that being
+		   the case, developers cannot tell when/why their applications are
+		   failing. Any code error will cause the function to fire and display
+		   the error in an alert dialog.
+		   ======================================================================*/
+		  window.onerror = function(msg, url, line) {
+			var idx = url.lastIndexOf("/");
+			if (idx > -1) {
+			  url = url.substring(idx + 1);
+			}
+			alert("ERROR in " + url + " (line #" + line + ")\n" + msg);
+			console.error(msg);
+			return false;
+		  };
+		</script>
+
+		<script>
+				function getUrlParameterName(sParam)
+				{
+					var sPageURL = window.location.search.substring(1);
+					var sURLVariables = sPageURL.split('&');
+					for (var i = 0; i < sURLVariables.length; i++) 
+					{
+						var sParameterName = sURLVariables[i].split('=');
+						if (sParameterName[0] === sParam) 
+						{
+							return true;
+						}
+					}
+					return false;
+				} 
+			
+				sap.ui.localResources("view");
+				
+				function startApp(context) {
+					console.log("startApp");
+					sap.ui.getCore().attachInit(function() {
+						jQuery.sap.require("companion.js.index");
+						// new sap.m.Shell({
+						// 	app: new sap.ui.core.ComponentContainer({
+						// 		height : "100%",
+						// 		name : "companion"
+						// 	})
+						// }).placeAt("content");
+						var App = new sap.m.App({initialPage:"idApp"});
+						var page = sap.ui.view({id:"idApp", viewName:"companion.view.App", type:sap.ui.core.mvc.ViewType.XML  });
+						App.addPage(page);
+						App.placeAt("content");
+					
+						// set i18n model
+						page.setModel(app.createi18nModel(), "i18n");
+						// set device model
+						page.setModel(app.createDeviceModel(), "device");
+					});		
+				}
+				
+				window.onload = function() {
+					jQuery.sap.require("companion.js.index");
+					if (window.cordova || getUrlParameterName("companionbuster")) {
+						// jQuery.sap.require("companion.devapp");
+						
+						// var page = window.location.pathname.split("/").pop();
+		    //             if(page === "preview_hidden.html") {
+		    //                 window.sap_webide_FacadePreview = true;
+		    //             }
+						// companion.devapp.initialize();
+						app.initialize();
+					}
+					else {
+						startApp();
+					}
+				}
+		</script>
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content">
+			<div id="loginmodal" style="visibility: hidden">
+                <h1>User Login</h1>
+                <form id="myform" name="myform" >
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" class="txtfield" tabindex="1">
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="password" name="pword" id="pword" class="txtfield" tabindex="2">
+            		<div class="center"><input type="button" name="loginbtn" id="loginbtn" value="Log In" tabindex="3" onclick= "loadframe();"></div>
+                </form>
+            </div>
+		</div>
+	</body>
+</html>

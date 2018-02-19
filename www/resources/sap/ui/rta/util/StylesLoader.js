@@ -1,0 +1,6 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+
+(c) Copyright 2009-2017 SAP SE. All rights reserved
+ */
+sap.ui.define(['jquery.sap.global'],function(q){"use strict";var m={};m.loadStyles=function(f){return q.get(q.sap.getModulePath('sap.ui.rta.themes.base.'+f)+'.css').then(function(d){if(sap.ui.getCore().getConfiguration().getRTL()){return d.replace(/right/g,'left');}return d;});};return m;},true);

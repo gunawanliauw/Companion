@@ -1,0 +1,48 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="companion.controller.App" displayBlock="true"><Page title="{i18n>AppTitle}" showFooter="true" enableScrolling="true" floatingFooter="false">
+		<content>
+			<layout:VerticalLayout width="100%" id="__layout0">
+			<layout:content>
+			    <Label text="{i18n>BroadcastTitle}" width="100%" id="__label0" design="Bold"/>
+			    <VBox width="100%" id="__vbox1" direction="Column" justifyContent="Center" alignContent="Center" alignItems="Center">
+			        <items>
+			            <TextArea xmlns="sap.m" id="txtBroadcast" width="100%" rows="3" cols="50"/>
+			        </items>
+			    </VBox>
+			</layout:content>
+			</layout:VerticalLayout>
+			<layout:VerticalLayout width="100%">
+			<layout:content>
+			    <HBox width="100%" id="__hbox0" alignContent="Center" alignItems="Center" justifyContent="SpaceAround">
+			        <items>
+			            <Button xmlns="sap.m" text="CEAC" width="125px" id="btnCEAC" icon="sap-icon://crm-sales" press="handleCEAC"/>
+			            <Button xmlns="sap.m" text="Dashboard" width="125px" id="btnDashboard" icon="sap-icon://bbyd-dashboard" press="handleDashboard"/>
+			        </items>
+			    </HBox>
+			    <HBox width="100%" id="__hbox1" alignContent="Center" alignItems="Center" justifyContent="SpaceAround">
+			        <items>
+			            <Button xmlns="sap.m" text="Timesheet" id="btnTimesheet" icon="sap-icon://timesheet" press="handleTimesheet" width="125px"/>
+			            <Button xmlns="sap.m" text="Expense" width="125px" id="btnExpense" icon="sap-icon://travel-expense" press="handleExpense"/>
+			        </items>
+			    </HBox>
+			</layout:content>
+			</layout:VerticalLayout>
+			<layout:VerticalLayout width="100%" id="__layout1">
+			<layout:content><Label text="Support" width="100%" id="__label1"/>
+			    <layout:HorizontalLayout width="100%">
+			        <layout:content>
+			            <core:Icon src="sap-icon://call" size="2em" id="__icon1" press="handleCall"/>
+			            <Label text=" " width="10px" id="__label2"/>
+			            <core:Icon src="sap-icon://email" size="2em" id="__icon2" press="handeEmail"/>
+			        </layout:content>
+			    </layout:HorizontalLayout>
+			</layout:content>
+			</layout:VerticalLayout>
+		</content>
+		<footer>
+			<Toolbar>
+		        <Input id="inpSearch"/>
+		        <Button id="btnSearch" icon="sap-icon://search" press="handleSearch"/>
+		    </Toolbar>
+		</footer>
+	</Page>
+</core:View>

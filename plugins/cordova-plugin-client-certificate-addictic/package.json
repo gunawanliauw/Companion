@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-client-certificate-addictic",
+  "version": "0.0.1",
+  "description": "Cordova Client Certificate Plugin",
+  "cordova": {
+    "id": "cordova-plugin-client-certificate-addictic",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agenceaddictic/cordova-plugin-client-certificate-addictic.git"
+  },
+  "keywords": [
+    "client",
+    "certificate",
+    "authentication",
+    "client certificate",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "Vianney C",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/agenceaddictic/cordova-plugin-client-certificate/issues"
+  },
+  "homepage": "https://github.com/agenceaddictic/cordova-plugin-client-certificate#readme"
+}

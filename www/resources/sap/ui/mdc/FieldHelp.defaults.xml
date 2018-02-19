@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mdc="sap.ui.mdc" xmlns:unified="sap.ui.unified" xmlns:m="sap.m">
+	<mdc:FieldHelp id="FieldHelp-DatePicker" defaultType="DatePicker" defaultDataTypes="sap.ui.model.odata.type.Date,sap.ui.model.odata.type.DateTime,sap.ui.model.odata.type.DateTimeOffset,sap.ui.model.type.Date,sap.ui.model.type.DateTime,Date"
+		dataType="Date"
+		closeOnSelect="true"
+		width="279px"
+		height="270px"
+		verticalScrolling="false"
+		icon="sap-icon://appointment-2">
+		<unified:Calendar>
+			<unified:selectedDates>
+				<unified:DateTypeRange startDate="{path:'$fieldHelp>currentValue'}" />
+			</unified:selectedDates>
+		</unified:Calendar>
+	</mdc:FieldHelp>
+</core:FragmentDefinition>

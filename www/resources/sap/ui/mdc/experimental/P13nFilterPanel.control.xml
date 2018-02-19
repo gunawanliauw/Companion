@@ -1,0 +1,46 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+	<l:VerticalLayout>
+
+		<Table id="IDTable" mode="MultiSelect" rememberSelections="false"
+			itemPress="_onItemPressed" selectionChange="_onSelectionChange"
+			items="{path:'$sapuimdcP13nPanel>/items', templateShareable:false}">
+			<headerToolbar>
+				<OverflowToolbar id="IDToolbar">
+					<ToolbarSpacer></ToolbarSpacer>
+					<SearchField id="IDSearchField" liveChange="_onSearchFieldLiveChange"
+						search="_onExecuteSearch">
+						<layoutData>
+							<OverflowToolbarLayoutData minWidth="12.5rem"
+								maxWidth="23.077rem" shrinkable="true" moveToOverflow="true"
+								priority="High" />
+						</layoutData>
+					</SearchField>
+				</OverflowToolbar>
+			</headerToolbar>
+			<columns>
+				<Column>
+					<header>
+						<Text
+							text="{parts:[{path:'$sapuimdcP13nPanelInternal>/countOfSelectedItems'}, {path:'$sapuimdcP13nPanelInternal>/countOfItems'}], formatter:'.formatter.showCount'}" />
+					</header>
+				</Column>
+				<Column>
+					<header>
+						<Text text="Value" />
+					</header>
+				</Column>
+			</columns>
+			<items>
+				<ColumnListItem selected="{$sapuimdcP13nPanel>selected}"
+					tooltip="{$sapuimdcP13nPanel>tooltip}" type="Active">
+					<cells>
+						<Text text="{$sapuimdcP13nPanel>text}" />
+						<!-- second cell will be added during the runtime -->
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+
+	</l:VerticalLayout>
+</core:FragmentDefinition>

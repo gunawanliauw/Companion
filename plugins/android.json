@@ -1,0 +1,46 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ibs.companion"
+        },
+        "cordova-push-notifications": {
+            "PACKAGE_NAME": "com.ibs.companion"
+        },
+        "cordova-plugin-app-launcher": {
+            "PACKAGE_NAME": "com.ibs.companion"
+        },
+        "cordova-client-cert-authentication": {
+            "PACKAGE_NAME": "com.ibs.companion"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.ibs.companion"
+        },
+        "cordova-plugin-client-certificate-addictic": {
+            "PACKAGE_NAME": "com.ibs.companion"
+        },
+        "com.adi.plugin.keychainutil": {
+            "PACKAGE_NAME": "com.ibs.companion"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.ibs.companion"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.ibs.companion"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ibs.companion"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ibs.companion"
+        }
+    }
+}

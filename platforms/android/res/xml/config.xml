@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ibs.companion" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="PushPlugin">
+        <param name="android-package" value="com.plugin.gcm.PushPlugin" />
+    </feature>
+    <feature name="Launcher">
+        <param name="android-package" value="com.hutchind.cordova.plugins.launcher.Launcher" />
+    </feature>
+    <feature name="ClientCertificateAuthentication">
+        <param name="android-package" value="de.jstd.cordova.plugin.ClientCertificateAuthentication" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="ClientCertificate">
+        <param name="android-package" value="org.apache.cordova.plugin.clientcert.ClientCertificate" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Keychain">
+        <param name="android-package" value="com.adi.plugin.Keychain" />
+    </feature>
+    <feature name="Media">
+        <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
+    </feature>
+    <feature name="FileTransfer">
+        <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Companion</name>
+    <description />
+    <author email="dev@sap.com" href="http://www.sap.com">SAP Product and Innovation</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon src="res/icon/icon_512.png" />
+    <icon density="ldpi" src="www/res/android/Companion.png" />
+    <icon density="mdpi" src="www/res/android/Companion.png" />
+    <icon density="hdpi" src="www/res/android/Companion.png" />
+    <icon density="xhdpi" src="www/res/android/Companion.png" />
+    <splash density="land-ldpi" src="www/res/android/Companion.png" />
+    <splash density="port-ldpi" src="www/res/android/Companion.png" />
+    <splash density="land-mdpi" src="www/res/android/Companion.png" />
+    <splash density="port-mdpi" src="www/res/android/Companion.png" />
+    <splash density="land-hdpi" src="www/res/android/Companion.png" />
+    <splash density="port-hdpi" src="www/res/android/Companion.png" />
+    <splash density="land-xhdpi" src="www/res/android/Companion.png" />
+    <splash density="port-xhdpi" src="www/res/android/Companion.png" />
+    <preference name="UrlScheme" value="" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="sap-development-version" value="0.0.1" />
+    <preference name="hybridapprevision" value="1" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="5000" />
+    <preference name="Fullscreen" value="false" />
+    <preference name="Orientation" value="default" />
+    <preference name="ShowTitle" value="false" />
+    <preference name="LogLevel" value="VERBOSE" />
+    <preference name="LoadUrlTimeout" value="80000" />
+    <preference name="android-minSdkVersion" value="16" />
+</widget>

@@ -1,0 +1,389 @@
+{
+	"generation": [
+		{
+			"templateId": "ui5template.emptyMobileProjectKapsel",
+			"templateVersion": "1.28.1",
+			"dateTimeStamp": "Thu, 01 Feb 2018 04:24:09 GMT"
+		}
+	],
+	"translation": {
+		"translationDomain": "",
+		"supportedLanguages": "en,fr,de",
+		"defaultLanguage": "en",
+		"defaultI18NPropertyFile": "i18n.properties",
+		"resourceModelName": "i18n"
+	},
+	"projectType": [
+		"sap.watt.uitools.ide.fiori",
+		"sap.watt.uitools.ide.web",
+		"com.watt.common.builder.sapui5clientbuild",
+		"com.sap.webide.hybrid.cordova"
+	],
+	"hybrid": {
+		"FacadeConfig": {
+			"cordova-plugin-device-orientation": false,
+			"accelerometer": {},
+			"compass": {},
+			"bFacade": false,
+			"bMockLocation": true,
+			"position": {
+				"latitude": 1.2748848,
+				"longitude": 103.7973789
+			},
+			"locations": []
+		},
+		"appname": "Companion",
+		"appid": "com.ibs.companion",
+		"appdesc": "",
+		"appversion": "0.0.1",
+		"debugMode": false,
+		"appIcon": {
+			"defaultIcon": "",
+			"defaultIconData": "",
+			"ios": {
+				"ios8Iphone": "",
+				"ios7Iphone": "",
+				"ios7Ipad": "",
+				"ios61Iphone": "",
+				"ios61Ipad": ""
+			},
+			"android": {
+				"ldpi": "res/android/Companion.png",
+				"mdpi": "res/android/Companion.png",
+				"hdpi": "res/android/Companion.png",
+				"xhdpi": "res/android/Companion.png"
+			},
+			"windows": {
+				"s44": "",
+				"s71": "",
+				"s106": "",
+				"s150": "",
+				"s50": "",
+				"w310": ""
+			},
+			"windows10": {
+				"s44": "",
+				"s71": "",
+				"s106": "",
+				"s150": "",
+				"s50": "",
+				"w310": ""
+			}
+		},
+		"appSplash": {
+			"enable": true,
+			"defaultLSplashData": "",
+			"defaultPSplashData": "",
+			"delayTime": "1000",
+			"ios": {
+				"iphone": "",
+				"iphone2x": "",
+				"portIpad": "",
+				"portIpad2x": "",
+				"landIpad": "",
+				"landIpad2x": "",
+				"iphone52x": "",
+				"iphone6": "",
+				"iphone6plus": ""
+			},
+			"android": {
+				"landhdpi": "res/android/Companion.png",
+				"porthdpi": "res/android/Companion.png",
+				"landldpi": "res/android/Companion.png",
+				"portldpi": "res/android/Companion.png",
+				"landmdpi": "res/android/Companion.png",
+				"portmdpi": "res/android/Companion.png",
+				"landxhdpi": "res/android/Companion.png",
+				"portxhdpi": "res/android/Companion.png"
+			},
+			"windows": {
+				"s100": "",
+				"s140": "",
+				"s240": ""
+			},
+			"windows10": {
+				"s100": "",
+				"s140": "",
+				"s240": ""
+			}
+		},
+		"kapselLogon": {
+			"type": "",
+			"logo": "",
+			"logoText": "",
+			"background": "",
+			"disablePasscode": false,
+			"hideLogoCopyright": false
+		},
+		"useAppDescriptor4UI5Libs": false,
+		"localBuild": {
+			"useCustomLib": false,
+			"customLibFile": ""
+		},
+		"msType": 0,
+		"server": "",
+		"port": "",
+		"hcpmsServer": "hcpms-p1243943225trial.hanatrial.ondemand.com",
+		"hybridRevision": "1",
+		"mime": {
+			"path": "",
+			"root": ""
+		},
+		"platform": {
+			"ios": {
+				"selected": true,
+				"preferences": {
+					"Fullscreen": false,
+					"Orientation": "all",
+					"EnableViewportScale": false,
+					"UrlScheme": ""
+				}
+			},
+			"android": {
+				"selected": true,
+				"preferences": {
+					"Fullscreen": false,
+					"Orientation": "default",
+					"ShowTitle": false,
+					"LogLevel": "VERBOSE",
+					"LoadUrlTimeout": "80000",
+					"UrlScheme": ""
+				}
+			},
+			"windows": {
+				"selected": false,
+				"preferences": {
+					"Fullscreen": false,
+					"Orientation": "default",
+					"ShowTitle": false,
+					"LogLevel": ""
+				},
+				"preferencesWin10": {
+					"Fullscreen": false,
+					"Orientation": "default",
+					"ShowTitle": false,
+					"LogLevel": ""
+				}
+			}
+		},
+		"plugins": {
+			"cordova": {
+				"device": {
+					"selected": false,
+					"registry": "cordova-plugin-device",
+					"localBuild": true
+				},
+				"network": {
+					"selected": false,
+					"registry": "cordova-plugin-network-information",
+					"localBuild": true
+				},
+				"battery": {
+					"selected": false,
+					"registry": "cordova-plugin-battery-status",
+					"localBuild": true
+				},
+				"accelerometer": {
+					"selected": false,
+					"registry": "cordova-plugin-device-motion",
+					"localBuild": true
+				},
+				"compass": {
+					"selected": false,
+					"registry": "cordova-plugin-device-orientation",
+					"localBuild": true
+				},
+				"geolocation": {
+					"selected": false,
+					"registry": "cordova-plugin-geolocation",
+					"localBuild": true
+				},
+				"camera": {
+					"selected": false,
+					"registry": "cordova-plugin-camera",
+					"localBuild": true
+				},
+				"capture": {
+					"selected": false,
+					"registry": "cordova-plugin-media-capture",
+					"localBuild": true
+				},
+				"media": {
+					"selected": true,
+					"registry": "cordova-plugin-media",
+					"localBuild": true
+				},
+				"file": {
+					"selected": false,
+					"registry": "cordova-plugin-file",
+					"localBuild": true
+				},
+				"transfer": {
+					"selected": true,
+					"registry": "cordova-plugin-file-transfer",
+					"localBuild": true
+				},
+				"dialogs": {
+					"selected": false,
+					"registry": "cordova-plugin-dialogs",
+					"localBuild": true
+				},
+				"vibration": {
+					"selected": false,
+					"registry": "cordova-plugin-vibration",
+					"localBuild": true
+				},
+				"contacts": {
+					"selected": false,
+					"registry": "cordova-plugin-contacts",
+					"localBuild": true
+				},
+				"globalization": {
+					"selected": false,
+					"registry": "cordova-plugin-globalization",
+					"localBuild": true
+				},
+				"splashscreen": {
+					"selected": true,
+					"registry": "cordova-plugin-splashscreen",
+					"localBuild": true
+				},
+				"inappbrowser": {
+					"selected": false,
+					"registry": "cordova-plugin-inappbrowser",
+					"localBuild": true
+				},
+				"console": {
+					"selected": false,
+					"registry": "cordova-plugin-console",
+					"localBuild": true
+				},
+				"statusbar": {
+					"selected": false,
+					"registry": "cordova-plugin-statusbar",
+					"localBuild": true
+				}
+			},
+			"kapsel": {
+				"logon": {
+					"selected": false,
+					"registry": "kapsel-plugin-logon",
+					"localBuild": true
+				},
+				"appupdate": {
+					"selected": false,
+					"registry": "kapsel-plugin-appupdate",
+					"localBuild": true
+				},
+				"logger": {
+					"selected": false,
+					"registry": "kapsel-plugin-logger",
+					"localBuild": true
+				},
+				"settings": {
+					"selected": false,
+					"registry": "kapsel-plugin-settings",
+					"localBuild": true
+				},
+				"push": {
+					"selected": false,
+					"registry": "kapsel-plugin-push",
+					"localBuild": true
+				},
+				"encryptedstorage": {
+					"selected": false,
+					"registry": "kapsel-plugin-encryptedstorage",
+					"localBuild": true
+				},
+				"authproxy": {
+					"selected": false,
+					"registry": "kapsel-plugin-authproxy",
+					"localBuild": true
+				},
+				"barcode": {
+					"selected": false,
+					"registry": "kapsel-plugin-barcodescanner",
+					"localBuild": true
+				},
+				"odata": {
+					"selected": false,
+					"registry": "kapsel-plugin-odata",
+					"localBuild": true
+				},
+				"e2etrace": {
+					"selected": false,
+					"registry": "kapsel-plugin-e2etrace",
+					"localBuild": true
+				},
+				"calendar": {
+					"selected": false,
+					"registry": "nl.x-services.plugins.calendar",
+					"localBuild": true
+				},
+				"voicerecord": {
+					"selected": false,
+					"registry": "kapsel-plugin-voicerecording",
+					"localBuild": true
+				},
+				"attachmentviewer": {
+					"selected": false,
+					"registry": "kapsel-plugin-attachmentviewer",
+					"localBuild": true
+				},
+				"printer": {
+					"selected": false,
+					"registry": "de.appplant.cordova.plugin.printer",
+					"localBuild": true
+				}
+			},
+			"custom": {
+				"Launcher": {
+					"selected": true,
+					"registry": "cordova-plugin-app-launcher",
+					"localBuild": true
+				},
+				"cordova-push-notifications": {
+					"selected": true,
+					"registry": "cordova-push-notifications",
+					"localBuild": true,
+					"registered": true
+				},
+				"Client Certificate Authentication": {
+					"selected": true,
+					"registry": "cordova-client-cert-authentication",
+					"localBuild": true
+				},
+				"KeyChain Plugin for Cordova iOS": {
+					"selected": false,
+					"registry": "cordova-plugin-ios-keychain",
+					"localBuild": true
+				},
+				"File": {
+					"selected": true,
+					"registry": "cordova-plugin-file",
+					"localBuild": true
+				},
+				"Client Certificate": {
+					"selected": true,
+					"registry": "cordova-plugin-client-certificate-addictic",
+					"localBuild": true
+				},
+				"KeyChain Cordova Plugin": {
+					"selected": true,
+					"registry": "com.adi.plugin.keychainutil",
+					"localBuild": true
+				},
+				"Cordova Call Number Plugin": {
+					"selected": false,
+					"registry": "cordova-plugin-call-number",
+					"localBuild": true
+				}
+			}
+		},
+		"SelectedPlugins": []
+	},
+	"build": {
+		"buildRequired": true,
+		"lastBuildDateTime": "Mon, 19 Feb 2018 03:20:19 GMT"
+	}
+}
